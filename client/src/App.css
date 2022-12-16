@@ -1,0 +1,192 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  min-height: 30rem;
+  gap:10px
+}
+
+.card-container > div.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #000000
+}
+
+.card-container > div#chatlog {
+  height:300px;
+  padding:0%;
+  word-break:break-all;
+  overflow-y:scroll;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.card-container > div#ask {
+  overflow-y:scroll;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.card-container > div#chatbox {
+  border:transparent;
+  padding:0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.card-container > div#scoreboard {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display:flex;
+  
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+#appform { 
+  position:relative;
+  bottom:0px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem; 
+  display: flex; 
+  height: 3rem; 
+  box-sizing: border-box; 
+  backdrop-filter: blur(10px);
+
+}
+
+#appinput { 
+  border: none; 
+  padding: 0 1rem; 
+  flex-grow: 1; 
+  border-radius: 2rem; 
+  margin: 0.25rem; 
+}
+#appinput:focus { outline: none; }
+
+#appform > button { 
+  background: #333; 
+  border: none; 
+  padding: 0 1rem; 
+  margin: 0.25rem; 
+  border-radius: 3px; 
+  outline: none; 
+  color: #fff; 
+}
+
+#outlined-multiline-static {
+  width : 300px
+}
+
+span {
+  color: black;
+}
+
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+
+/*
+.name-field {
+  margin-bottom: 40px;
+}
+
+
+
+.request-card {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.render-chat {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.renderusers {
+  max-width: 700px;
+  border-radius: 5px;
+  padding:20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.hostButton {
+  max-width: 700px;
+  border-radius: 5px;
+  padding:20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.playerCards {
+  max-width: 700px;
+  border-radius: 5px;
+  padding:20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.UserList {
+  width: 300px;
+}*/
